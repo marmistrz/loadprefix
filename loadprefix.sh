@@ -39,7 +39,7 @@ for p in "$@"; do
             export LIBRARY_PATH="$prefix/lib64:$LIBRARY_PATH"
             export LD_LIBRARY_PATH="$prefix/lib64:$LD_LIBRARY_PATH"
         fi
-        export INCLUDEPATH="$prefix/include:$INCLUDEPATH"
+        export CPATH="$prefix/include:$CPATH"
         export MANPATH="$prefix/share/man:$MANPATH"
         echo "Added prefix $prefix..."
     fi
